@@ -5,7 +5,7 @@ This code allows to produce a performance profile for a weighted piece counter
 (WPC) strategy for Othello.
 
 For more information refer to:
-
+ 
 Jaśkowski, W.; Liskowski, P.; Szubert, M. & Krawiec, K. Blum, C. (Ed.) 
 Improving Coevolution by Random Sampling GECCO'13: Proceedings of the 15th 
 annual conference on Genetic and Evolutionary Computation, ACM, 2013 
