@@ -119,7 +119,7 @@ public class DeterministicThreadedWork<T> {
 
 	public static <T> void run(String workName, int numThreads, Worker<T> worker, Iterable<T> work) {
 		List<T> newArrayList = newArrayList(work);
-		int partitionSize = (int) Math.ceil(newArrayList.size() / numThreads);
+		int partitionSize = (int) Math.floor(1 + newArrayList.size() / numThreads);
 		run(workName, numThreads, worker, partition(newArrayList, partitionSize), false);
 	}
 

@@ -1,10 +1,9 @@
 package put.ci.cevo.util;
 
-import it.unimi.dsi.fastutil.objects.ObjectAVLTreeSet;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.SortedSet;
+import java.util.TreeSet;
 
 import org.apache.commons.math3.random.RandomDataGenerator;
 
@@ -16,7 +15,7 @@ public class RandomUtils {
 	 * the other implementations, especially for small <code>m</code> and large <code>Lists</code>.
 	 */
 	public static <T> List<T> sample(List<T> items, int m, RandomDataGenerator random) {
-		final SortedSet<T> res = new ObjectAVLTreeSet<T>();
+		final SortedSet<T> res = new TreeSet<T>();
 		final int n = items.size();
 		for (int i = n - m; i < n; i++) {
 			int pos = random.nextInt(0, i);

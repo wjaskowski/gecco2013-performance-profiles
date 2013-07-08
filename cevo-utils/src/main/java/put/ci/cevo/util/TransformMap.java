@@ -1,4 +1,4 @@
-package put.ci.cevo.util.sequence.transforms;
+package put.ci.cevo.util;
 
 import java.util.Collection;
 import java.util.HashMap;
